@@ -1,8 +1,8 @@
 package vn.iostar.uber.activities.client;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import vn.iostar.uber.R;
 
