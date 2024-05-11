@@ -1,5 +1,6 @@
 package vn.iostar.uber.activities.client;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -29,13 +30,16 @@ public class VoucherActivity  extends AppCompatActivity {
     private void getForm() {
         lv_voucher=findViewById(R.id.lv_voucher);
         listVoucher.clear();
+        ProgressDialog progressDialog = new ProgressDialog(VoucherActivity.this);
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
         uuDaiController.getListUuDai(new UuDaiController.DataRetrievedCallback_UuDai() {
             @Override
             public void onDataRetrieved(ArrayList<UuDai> listUuDai) {
                 listVoucher = listUuDai;
                 voucherAdapter = new VoucherAdapter(VoucherActivity.this,R.layout.item_voucher, listVoucher);
                 lv_voucher.setAdapter(voucherAdapter);
-
+                progressDialog.dismiss();
             }
         } );
 

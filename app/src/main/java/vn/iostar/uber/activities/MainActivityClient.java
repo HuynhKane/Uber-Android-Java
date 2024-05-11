@@ -13,18 +13,18 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.navigation.NavigationView;
 
 import vn.iostar.uber.R;
-import vn.iostar.uber.databinding.ActivityMainBinding;
+import vn.iostar.uber.databinding.ActivityMainClientBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivityClient extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
+    private ActivityMainClientBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainClientBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.topAppBar);

@@ -60,7 +60,8 @@ dependencies {
     implementation ("com.firebaseui:firebase-ui-auth:8.0.2")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
 
-
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.karumi:dexter:6.1.2")
     implementation("com.google.android.gms:play-services-location:21.2.0")
+    implementation("com.firebase:geofire-android:3.2.0")
 }
