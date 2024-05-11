@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
 
     <application
         android:allowBackup="true"
@@ -15,20 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uber"
         tools:targetApi="31">
-        <activity
-            android:name=".activities.client.Map_TypeVehical"
-            android:exported="true">
 
-
-        </activity>
         <activity
-            android:name=".activities.client.FormLocalActivity"
+            android:name=".activities.client.FinalBookingFormActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.client.VoucherActivity"
-            android:exported="true"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Uber.NoActionBar" >
+            android:name=".activities.MainActivityDriver"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,21 +30,36 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activities.client.ChooseTypePayment"
+            android:exported="false" />
+        <activity
+            android:name=".activities.client.CreditPayment"
+            android:exported="false" />
+        <activity
+            android:name=".activities.client.Map_TypeVehical"
+            android:exported="true" />
+        <activity
+            android:name=".activities.client.VoucherActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activities.client.FormLocalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivityClient"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Uber.NoActionBar"></activity>
+        <activity
             android:name=".activities.client.HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Uber.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.Uber.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/api_key" />
 
-        <activity
-            android:name=".activities.SplashScreenActivity"
-            android:exported="true"
-            android:theme="@style/SplashTheme" />
+
     </application>
 
 </manifest>
