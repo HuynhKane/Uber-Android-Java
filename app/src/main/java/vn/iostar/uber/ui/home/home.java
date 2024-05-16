@@ -30,7 +30,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.Arrays;
 
 import vn.iostar.uber.R;
-import vn.iostar.uber.activities.client.Map_TypeVehicalActivity;
+import vn.iostar.uber.activitys.client.Map_TypeVehicalActivity;
 import vn.iostar.uber.controllers.GeocodingHelper;
 
 public class home extends Fragment {

@@ -1,4 +1,4 @@
-package vn.iostar.uber.activities.client;
+package vn.iostar.uber.activitys.client;
 
 import android.os.Bundle;
 
@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import vn.iostar.uber.R;
 
-public class FormLocalActivity extends AppCompatActivity {
+public class CreditPaymentActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form_local);
+        setContentView(R.layout.activity_credit_payment);
     }
 }

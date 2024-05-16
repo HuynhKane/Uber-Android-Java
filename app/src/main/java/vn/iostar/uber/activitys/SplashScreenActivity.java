@@ -1,4 +1,4 @@
-package vn.iostar.uber.activities;
+package vn.iostar.uber.activitys;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package vn.iostar.uber.activities.driver;
+package vn.iostar.uber.activitys.driver;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package vn.iostar.uber.activities.client;
+package vn.iostar.uber.activitys.client;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
