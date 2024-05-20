@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import vn.iostar.uber.R;
+import vn.iostar.uber.activitys.HomeActivity;
 
 public class ChooseTypePaymentActivity extends AppCompatActivity {
     public static String typePayment = "";
