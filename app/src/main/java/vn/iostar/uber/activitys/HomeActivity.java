@@ -105,7 +105,6 @@ public class HomeActivity extends AppCompatActivity {
                             dismissProgressDialog();
                         }
                     });
-
                 }
                 else {
                     FirebaseAuth.getInstance().signOut();
