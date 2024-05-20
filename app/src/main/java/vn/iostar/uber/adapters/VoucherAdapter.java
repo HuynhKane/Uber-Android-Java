@@ -56,7 +56,7 @@ public class VoucherAdapter extends ArrayAdapter {
         else {
             if(selectedItemPosition==position){
                 finalListItemView.setBackgroundColor(Color.TRANSPARENT);
-                check.setImageResource(R.drawable.ic_check);
+                check.setImageResource(R.drawable.ic_checked);
             }
             else {
                 finalListItemView.setBackgroundColor(getContext().getResources().getColor(R.color.light_gray));
